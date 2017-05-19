@@ -64,11 +64,8 @@ public class MainActivity extends AppCompatActivity {
         if (q4) {
             score += 1;
         }
-        if (q5) {
-            score += 1;
-        }
 
-        if(name.getText().toString().equals("")) {
+        if (name.getText().toString().equals("")) {
             Toast.makeText(getApplicationContext(), "Please enter your name!",
                     Toast.LENGTH_SHORT).show();
             return;
