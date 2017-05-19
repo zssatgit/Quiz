@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         int score = 0;
         EditText name = (EditText) findViewById(R.id.name_field);
         RadioButton q1c, q2c, q3a, q4b;
-        CheckBox q5a, q5d;
+        CheckBox q5a, q5b, q5c, q5d;
         RatingBar star = (RatingBar) findViewById(R.id.score);
         TextView ans = (TextView) findViewById(R.id.ans);
         TextView answerText = (TextView) findViewById(R.id.answer);
@@ -44,13 +44,15 @@ public class MainActivity extends AppCompatActivity {
         q3a = (RadioButton) findViewById(R.id.q3a);
         q4b = (RadioButton) findViewById(R.id.q4b);
         q5a = (CheckBox) findViewById(R.id.q5a);
+        q5b = (CheckBox) findViewById(R.id.q5b);
+        q5c = (CheckBox) findViewById(R.id.q5c);
         q5d = (CheckBox) findViewById(R.id.q5d);
 
         boolean q1 = q1c.isChecked();
         boolean q2 = q2c.isChecked();
         boolean q3 = q3a.isChecked();
         boolean q4 = q4b.isChecked();
-        boolean q5 = q5a.isChecked() && q5d.isChecked();
+        boolean q5 = q5a.isChecked() && q5d.isChecked() && (!q5b.isChecked()) && (!q5c.isChecked());
 
         if (q1) {
             score += 1;
