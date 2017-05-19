@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="name">Name</string>
+    <string name="questions">questions</string>
+    <string name="question1">1. A small, edible seed</string>
+    <string name="description">(Vocabulary and Geography Quiz)</string>
+    <string name="dollop">Dollop</string>
+    <string name="fanatic">Fanatic</string>
+    <string name="sesame">Sesame</string>
+    <string name="pollen">Pollen</string>
+    <string name="question2">2. Moderate or restrained</string>
+    <string name="salubrious">Salubrious</string>
+    <string name="reprehensible">Reprehensible</string>
+    <string name="temperate">Temperate</string>
+    <string name="crepuscular">Crepuscular</string>
+    <string name="question3">3. Applying to the same rules repeatedly</string>
+    <string name="consistency">Consistency</string>
+    <string name="cerumen">Cerumen</string>
+    <string name="wire">Wire</string>
+    <string name="statistics">Statistics</string>
+    <string name="question4">4. The handle of a bladed instrument</string>
+    <string name="labor">Labor</string>
+    <string name="haft">Haft</string>
+    <string name="neck">Neck</string>
+    <string name="longevity">Longevity</string>
+    <string name="question5">5. China contains which of the following cities</string>
+    <string name="shanghai">Shanghai</string>
+    <string name="alexandria">Alexandria</string>
+    <string name="oran">Oran</string>
+    <string name="beijing">Beijing</string>
+    <string name="submit">submit</string>
+    <string name="ans">answer</string>
+</resources>

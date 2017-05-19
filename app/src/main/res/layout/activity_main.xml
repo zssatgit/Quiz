@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_margin_vertical"
+        android:paddingLeft="@dimen/activity_margin_horizontal"
+        android:paddingRight="@dimen/activity_margin_horizontal"
+        android:paddingTop="@dimen/activity_margin_vertical">
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/header"
+            android:text="@string/questions" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View style="@style/separator" />
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question1" />
+
+            <RadioGroup
+                android:id="@+id/question1"
+                style="@style/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/q1a"
+                    style="@style/choice"
+                    android:text="@string/dollop" />
+
+                <RadioButton
+                    android:id="@+id/q1b"
+                    style="@style/choice"
+                    android:text="@string/fanatic" />
+
+                <RadioButton
+                    android:id="@+id/q1c"
+                    style="@style/choice"
+                    android:text="@string/sesame" />
+
+                <RadioButton
+                    android:id="@+id/q1d"
+                    style="@style/choice"
+                    android:text="@string/pollen" />
+
+            </RadioGroup>
+
+            <View style="@style/separator" />
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question2" />
+
+            <RadioGroup
+                android:id="@+id/question2"
+                style="@style/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/q2a"
+                    style="@style/choice"
+                    android:text="@string/salubrious" />
+
+                <RadioButton
+                    android:id="@+id/q2b"
+                    style="@style/choice"
+                    android:text="@string/reprehensible" />
+
+                <RadioButton
+                    android:id="@+id/q2c"
+                    style="@style/choice"
+                    android:text="@string/temperate" />
+
+                <RadioButton
+                    android:id="@+id/q2d"
+                    style="@style/choice"
+                    android:text="@string/crepuscular" />
+            </RadioGroup>
+
+            <View style="@style/separator" />
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question3" />
+
+            <RadioGroup
+                android:id="@+id/question3"
+                style="@style/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/q3a"
+                    style="@style/choice"
+                    android:text="@string/consistency" />
+
+                <RadioButton
+                    android:id="@+id/q3b"
+                    style="@style/choice"
+                    android:text="@string/cerumen" />
+
+                <RadioButton
+                    android:id="@+id/q3c"
+                    style="@style/choice"
+                    android:text="@string/wire" />
+
+                <RadioButton
+                    android:id="@+id/q3d"
+                    style="@style/choice"
+                    android:text="@string/statistics" />
+            </RadioGroup>
+
+            <View style="@style/separator" />
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question4" />
+
+            <RadioGroup
+                android:id="@+id/question4"
+                style="@style/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/q4a"
+                    style="@style/choice"
+                    android:text="@string/labor" />
+
+                <RadioButton
+                    android:id="@+id/q4b"
+                    style="@style/choice"
+                    android:text="@string/haft" />
+
+                <RadioButton
+                    android:id="@+id/q4c"
+                    style="@style/choice"
+                    android:text="@string/neck" />
+
+                <RadioButton
+                    android:id="@+id/q4d"
+                    style="@style/choice"
+                    android:text="@string/longevity" />
+            </RadioGroup>
+
+            <View style="@style/separator" />
+
+            <TextView
+                style="@style/question"
+                android:text="@string/question5" />
+
+
+            <CheckBox
+                android:id="@+id/q5a"
+                style="@style/choice"
+                android:text="@string/shanghai" />
+
+            <CheckBox
+                android:id="@+id/q5b"
+                style="@style/choice"
+                android:text="@string/alexandria" />
+
+            <CheckBox
+                android:id="@+id/q5c"
+                style="@style/choice"
+                android:text="@string/oran" />
+
+            <CheckBox
+                android:id="@+id/q5d"
+                style="@style/choice"
+                android:text="@string/beijing" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/submit"
+            android:onClick="submit" />
+
+        <RatingBar
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="true"
+            android:max="5"
+            android:stepSize="1" />
+
+        <TextView
+            android:id="@+id/ans"
+            style="@style/header" />
+
+        <TextView
+            android:id="@+id/answer"
+            style="@style/question"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" />
+    </LinearLayout>
+</ScrollView>
